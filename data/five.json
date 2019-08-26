@@ -1,0 +1,74 @@
+
+[{
+     
+    "question": "If it took 6 people 9 hours to build a barn, how long would it take 12 people to build the same barn?",
+    "answer":"0"
+
+},
+{
+
+    "question": "When Miguel was 6 years old, his little sister, Leila, was half is age. If Miguel is 40 years old today, how old is Leila?",
+    "answer":"37" 
+     
+},
+{
+     
+    "question": "I am a three digit number. My tens digit is six more than my ones digit. My hundreds digit is eight less than my tens digit. What number am I?",
+    "answer":"193"
+
+},
+{
+ 
+    "question": "What can you put between a 7 and an 8 so that the result is greater than a seven, but less than an eight?",
+    "answer":"7.8"
+
+},
+{
+     
+    "question": "Find the four digit number in which the first digit is one fourth of the last digit, the second digit is 6 times the first digit, and the third digit is the second digit plus 3.",
+    "answer":"1694"
+
+},
+{
+     
+    "question": "When my father was 31 I was 8. Now he is twice as old as me. How old am I?",
+    "answer":"23"  
+
+},
+{
+    
+    "question": "Adored by few, Feared and hated by many. Mistress of the entire universal reason, Master in the art of numbers. Some may have solved many of your mysteries, But there still much of them to find. What are they?",
+    "answer": "Mathematics"
+
+
+},
+{
+ 
+    "question":"X is an odd number. Take an alphabet away from X and it becomes even. Which is that number?",
+    "answer":"7"
+  
+},
+{  
+   
+    "question":"Tom was asked to paint the number plates on 100 apartments which means he will have to paint numbers 1 through 100. Can you figure out the number of times he will have to paint the number 8?",
+    "answer":"20"
+  
+},
+{  
+   
+    "question":"William has a toaster with 2 slots. So he can toast one side each of 2 breads simultaneously which takes 1 minute. He wanted to make 3 pieces of toast for his breakfast. What is the minimum time required to do so?",
+    "answer":"3"
+  
+},
+{
+    
+    "question":"I am a three digit number. My second digit is 4 times bigger than the third digit. My first digit is 3 less than my second digit. Who am I?",
+    "answer":"141"
+  
+},
+{ 
+  
+    "question":"A man is twice as old as his little sister. He is also half as old as their dad. Over a period of 50 years, the age of the sister will become half of their dad’s age. What is the age of the man now?",
+    "answer":"50"
+  
+}]

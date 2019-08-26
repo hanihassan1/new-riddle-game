@@ -1,0 +1,272 @@
+/*--------------------------------------------fonts*/
+@import url('https://fonts.googleapis.com/css?family=Varela+Round:100,200,300,400,500,600,700|EXO:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Cantarell:700i:100,200,300,400,500,600,700|EXO:100,200,300,400,500,600,700');
+/*--------------------------------------------body & html styles*/
+body {
+    font-family: 'Varela Round', sans-serif;
+    height: 100%;
+    background-image: url(../images/park-troopers-RAtKWVlfdf4-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.hide {
+    display: none !important;
+}
+
+
+a {
+    text-decoration: none !important;
+}
+
+html {
+ scroll-behavior: smooth;
+}
+
+
+small {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  text-align: center;
+  padding: 50px 0;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -1px;
+  color: inherit;
+  font-size: 40px;
+}
+
+
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  font-weight: 300;
+  color: inherit;
+  padding: 50px;
+}
+
+.center {
+  text-align: center;
+}
+
+
+
+section {
+  height: 100vh;
+}
+ 
+/*--------------------------------------------index--form &logo*/
+#logoOne  {
+  border-radius: 15%;
+  opacity: .6;
+}
+
+.game_name {
+  text-align:center;
+     padding-bottom: 25px;
+     
+}
+
+.signin  {
+  color:#007bff;
+ 
+}
+
+
+/*--------------------------------------------nav & Question card*/
+
+@media only screen and (max-width: 480px) {  
+    body {  
+          max-width: 480px;  
+    }  
+    .card_row   {  
+          font-size:14px!important;  
+    }  
+} 
+
+.active {
+  background-color:#F1C40F;
+}
+
+ 
+nav {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 50px 0;
+  box-shadow: 0px 5px 0px #dedede;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+nav.shift ul li a {
+  position:relative;
+  z-index: 1;
+}
+nav.shift ul li a:hover {
+  color: #91640F;
+}
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #F1C40F;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+#nav_catog  {
+  background: #f1c40f; 
+  color: rgba(0, 0, 0, 0.5); 
+
+}
+
+#sendMessageButton1     {
+    opacity: 9;
+     background-color: #A9A9A9;
+    border-radius: 10%;
+    color: #484848;
+}
+.sect  {
+      height: 96vh;
+
+}
+.form-edit  {
+  padding-top:20px;
+ 
+}
+
+
+.form-control {
+  
+     width: 68%!important;
+     
+}
+.btn {
+ margin-top:10px;
+}
+.form-edit {
+  height:75%;
+   padding-top: 32px;
+  
+}
+
+
+/*--------------------------------------------nav & Question card*/
+
+@media only screen and (max-width: 1024px) {  
+    body {  
+          max-width: 10248px;  
+    }  
+    .foot-edit {  
+          display: none  
+    }  
+} 
+
+
+.footer-name {
+  text-align:center;
+  padding-left:150px;
+  font-size:25px;
+  text-shadow: 2px 2px 30px #007bff;
+ 
+}
+
+
+.foot-edit  {
+  border-top:1px solid blue;
+  background: #F1C40F
+}
+
+/*--------------------------------------------Leadership page*/
+
+.lead-head  {
+  text-align:center;
+  font-size:30px;
+   color:#007bff;
+   font-weight: 700;
+   font-family: 'Varela Round', sans-serif;
+    text-decoration: underline;
+}
+
+.lead-backg {
+     height: 77vh;
+}
+
+
+.table {
+  width: 500px;
+  padding-right: 10%;
+  font-size:20px;
+}
+
+.lead-homebt {
+ font-size:30px;
+ padding-bottom:50px;
+
+ font-family: 'Varela Round', sans-serif;
+ 
+}
+
+.newgame {
+   background-color: #16D540!important;
+   color:white;
+}
+.fas  {
+  color:orange!important;
+  font-size:40px;
+}
+.fa-medal  {
+  font-size:20px!important;
+}
+
+.winner  {
+  color:#16D540;
+}

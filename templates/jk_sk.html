@@ -1,0 +1,183 @@
+{% extends 'base.html' %}
+{% block head %}
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+
+{% endblock %}
+{% block content %} 
+
+<!--/*--------------------------------------------header/nav*/-->
+<section id="nav_catog">
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="col-sm-1"></div>
+      
+      <div class="col-sm-10">
+    <nav class="shift">
+    <ul>
+      <img height="75px" width="75px" id="logoOne" src="{{url_for('static',filename='images/main-logo.jpg')}}">
+      <a href="{{url_for('index')}}" class="logo">
+        <li><a href="https://9756ebca0b6a461ca3515f5d51d978ee.vfs.cloud9.us-east-1.amazonaws.com">Home</a></li>
+        <li><a id="jk_sk" class="" onclick="req_question(this.id)">JK / SK </a></li>
+        <li><a id="1-2" class="" onclick="req_question(this.id)">Grades: 1 / 2</a></li>
+        <li><a id="3-4" class="" onclick="req_question(this.id)">Grades: 3 / 4</a></li>
+        <li><a id="5" class="" onclick="req_question(this.id)">Grade: 5</a></li>
+        <li><a id="leadershipId" class="hide" onclick="leadership(this.id)">Grade: 5</a></li>
+    </ul>
+  </nav>
+  </div>
+  
+  <div class="col-sm-1"></div>
+   </div>
+  </div>
+
+  <h2>{{user}}</h2>
+
+<!--/*--------------------------------------------Question Card*/-->
+  <div class="container-fluid">
+    <div class="row card_row no-gutters">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+      <div class="card">
+        <div class="card-header">
+          Question
+
+          <div class="card-body">
+            <h6 class="card-title"><b>Answer the following riddle.</b></h6>
+            <p class="riddleQ" id="riddle_place"></p>
+            <input name="answer" type="text" class="form-control"  placeholder="Type in here." id="answer_box" required data-validation-required-message="Answer">
+            <a href="#" class="btn btn-primary" id="answerId" onclick="getData();">Answer</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+  </div>
+
+
+</section>
+
+<!--/*--------------------------------------------Score modal*/-->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+    
+      
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Score Card</h4>
+        </div>
+        <div class="modal-body">
+          <p id="wrong_answer"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" id="u-scoreId" data-dismiss="modal" onclick="got_to_leaderboard()">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+        
+        <div id="incorrect" class="hide">
+                        <p id="result-icon" class="m-0">
+                            <i class="fas fa-exclamation"></i>
+                        </p>
+                        <p id="guess-again">Try again!</p>
+                        
+                    </div>
+      
+<!--/*--------------------------------------------script for api*/-->
+<script type="text/javascript">
+  function req_question(user_category) {
+    $('ul').on('click', 'a', function() {
+    $('#' + user_category).removeClass('active');
+    $(this).addClass('active');
+});
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "{{url_for('get_question') }}" + "?category=" + user_category, true);
+    xhttp.send();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById('riddle_place').innerHTML = this.response;
+      }
+    };
+
+
+
+  }
+var score = 0
+  function getData() {
+    var question = $("#riddle_place").text();
+    var answers = $("#answer_box").val();
+    var category = $(".active").attr("id");
+    var que_ans = new XMLHttpRequest();
+    
+    que_ans.onreadystatechange = function() {
+      if (que_ans.readyState === 4 && que_ans.status === 200) {
+        if ((this.responseText).replace("\n", "") == "true") {
+          score += 1;
+          req_question(category);
+        }
+        else {
+        $("#wrong_answer").text("Incorrect Answer, Your Score is : " + score);
+        $("#myModal").modal();
+        send_score();
+      }
+      }
+    };
+
+    que_ans.open("GET", "{{url_for('que_ans') }}" + "?question=" + question + "&answer=" + answers + "&category=" + category, true);
+    que_ans.send();
+  }
+  
+  function send_score(){
+    var name = "{{user}}"
+    var name_score = new XMLHttpRequest();
+    
+    name_score.onreadystatechange = function() {
+      if (name_score.readyState === 4 && name_score.status === 200) {
+        if ((this.responseText).replace("\n", "") == "true") {
+          score += 1;
+          send_score(score);
+        }
+    
+  }
+};
+
+
+
+
+ name_score.open("GET", "{{url_for('user_score') }}" + "?name=" + name + "&score=" + score, true);
+ name_score.send();
+}
+
+
+function fireit(){
+var theone=Math.floor(Math.random()*6)
+
+if (theone<=document.fire.bullets.value-1)
+alert("Bang. You\'re dead!")
+else{
+document.fire.message.value="Whew. Got lucky!"
+setTimeout("document.fire.message.value='Play Roulette'",500)
+}
+}
+
+function ClearFields() {
+
+     document.getElementById("answer_box").value = "";
+    
+}
+
+function got_to_leaderboard(){
+  window.location.href = "{{url_for('leadership')}}";
+}
+</script>
+<!--/*--------------------------------------------end of content*/-->
+
+
+
+{% endblock %}

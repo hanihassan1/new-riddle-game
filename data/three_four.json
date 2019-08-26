@@ -1,0 +1,90 @@
+
+[{
+    "question": "A grandfather, two fathers and two sons went to the movie theater together and everyone bought one movie ticket each. How many tickets did they buy in total?",
+     "answer": "3"
+
+},
+{
+  
+    "question": "A little boy goes shopping and purchases 12 tomatoes. On the way home, all but 9 get mushed and ruined. How many tomatoes are left in a good condition?",
+    "answer": "9"
+
+},
+{
+   
+    "question": "Eggs are $0.12 a dozen. How many eggs can you get for a dollar?",
+    "answer": "100"
+    
+},
+{     
+     
+    "question":"How did the soccer fan know before the game that the score would be 0 to 0? ",
+    "answer" : "0"
+  
+},
+{ 
+   
+    "question":"At the time of shipping, Tom can place 10 small boxes or 8 large boxes into a carton. A total of 96 boxes were sent in one shipment. The number of small boxes was less than large boxes. What is the total number of cartons he shipped?",
+    "answer":"11"
+  
+},
+{ 
+   
+    "question":"You are given a telephone and asked to multiply all the numbers on the device's number pad. What will be the answer?",
+    "answer":"0"
+  
+},
+{ 
+   
+    "question":"If you multiply me by any other number, the answer will always remain the same. Who am I?",
+    "answer":"0"
+  
+},
+{ 
+   
+    "question":"I am an odd number. Take away a letter and I become even. What number am I?",
+    "answer":"7"
+  
+},
+{ 
+   
+    "question":"Mary has four daughters, and each of her daughters has a brother — how many children does Mary have?",
+    "answer":"5"
+   
+},
+{ 
+  
+    "question":"A tree doubled in height each year until it reached its maximum height over the course of ten years. How many years did it take for the tree to reach half its maximum height?",
+    "answer":"9"
+  
+},
+{ 
+   
+    "question":"If you can purchase 8 eggs for 26 cents, how many can you buy for a cent and a quarter?",
+    "answer":"8"
+  
+},
+{ 
+   
+    "question":"Peter is 54 years old, and his father Joe is 80. How many years ago was Joe three times the age of his son Peter?",
+    "answer":"41"
+  
+},
+{ 
+    
+    "question":"There are several books on a bookshelf. If one book is the 4th from the left and 6th from the right, how many books are on the shelf?",
+    "answer":"9"
+  
+},
+{ 
+   
+    "question":"A farmer has 17 sheep and all but 9 move. How many are left?",
+    "answer":"9"
+  
+},
+{ 
+   
+    "question":" If you have a cake, how many pieces of cake can you form with 3 straight cuts?",
+    "answer":"8"
+ 
+}]

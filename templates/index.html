@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+ {% block head %}
+<script src="{{ url_for('static', filename='main.js')}}"></script>
+{% endblock %}
+
+{% block content %}
+
+
+    
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for message in messages %}
+   
+
+<script type="text/javascript">
+    window.location.href = "{{url_for('jk_sk_ans') }}" + "?username=" + localStorage.getItem("username")
+</script>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+<!--/*--------------------------------------------Logo & sign in form*/-->   
+<div class="container-fluid sect">
+    <div class="row no-gutters">
+<div class="col-lg-3 col-md-8 mx-auto form-edit">
+     <img id="logoOne" src="/static/images/main-logo.jpg">
+            <p><b class="signin">Sign In!</b></p>
+
+            <form method="POST" name="sentMessage" id="contactForm" novalidate>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls">
+                        <label>Name</label>
+                        <input name="name" onfocusout="save_name()" type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>Age</label>
+                        <input name="age" type="age" class="form-control" placeholder="Age" id="age" required data-validation-required-message="Please enter your age.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls">
+                        <label>Grade</label>
+                        <input name="grade" type="grade" class="form-control" placeholder="grade" id="grade" required data-validation-required-message="Please enter your grade.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <br>
+                <div id="success"></div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary hvr-push" id="sendMessageButton1" disabled="disabled">Enter</button>
+                </div>
+            </form>
+        </div>
+        </div>
+        </div>
+        
+        
+        
+        
+{% endblock %}

@@ -1,0 +1,92 @@
+[{
+
+    "question": "A duck was given $9, a spider was given $36, a bee was given $27. Based off of this information, how much money would be given to a cat?",
+    "answer": "$18"
+
+},
+{
+    
+    "question": "A grandmother, two mothers, and two daughters went to a baseball game together and bought one ticket each. How many tickets did they buy in total?",
+    "answer": "3"
+
+},
+{
+    
+    "question": "There are 2 ducks in front of 2 other ducks. There are 2 ducks behind 2 other ducks. There are 2 ducks beside 2 other ducks. How many ducks are there?",
+    "answer": "4"
+
+},
+{ 
+
+    "question": "If two's company and three's a crowd, what are four and five?",
+    "answer": "9"
+
+},
+{
+ 
+    "question": "If there are 4 apples and you take away 3, how many do you have?",
+    "answer":"3"
+ 
+},
+{ 
+    
+    "question":"Mary has 7 daughters and each of them has a brother. Can you figure out the total number of kids Mary have?",
+    "answer":"8"
+  
+},
+{ 
+  
+    "question":"I am between 0 and 15. I am less than 10. I am the number of days in one week. What number am I?",
+    "answer":"7"
+  
+},
+{ 
+   
+    "question":"In two years I know, I'll be twice as old as five years ago, said Tom. How old is Tom?",
+    "answer":"12"
+  
+},
+{ 
+   
+    "question":"Four years ago, Alex was twice as old as Jake. Four years from now, Jake will be 3/4 of Alex's age. How old is Alex?",
+    "answer":"12"
+  
+},
+{ 
+    
+    "question":"There are 12 kids in a classroom. 6 kids are wearing socks and 4 are wearing shoes. 3 kids are wearing both. How many are bare feet?",
+    "answer":"5"
+  
+},
+{ 
+  
+    "question":" I am between 0 and 20. I am more than the number of fingers on two hands. I am one less than 15.What number am I?",
+    "answer":"14"
+  
+},
+{ 
+    
+    "question": "I am less than 15.  I am more than 6 plus 3. I am one less than thirteen. What number am I?",
+    "answer": "12"
+  
+},
+{ 
+    
+    "question":"I am between 0 and 15. I am more than 4. I am one less than 11. What number am I?",
+    "answer": "10"
+  
+},
+{ 
+    
+    "question":"Carson bumps into his toy box, 4 toys spill onto the floor, but 5 toys stay in the box. How many toys did Carson have in the toy box?",
+    "answer":"9"
+  
+},
+{ 
+  
+    "question": "Mr. Grey helped dry the dishes. He dried 3 small glasses and 5 large glasses. How many plasses did he dry?",
+    "answer":"8"
+  
+  
+  
+}]

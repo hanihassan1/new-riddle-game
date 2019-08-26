@@ -1,0 +1,93 @@
+[{
+  "question": "If there are four apples and you take away three, how many do you have?",
+  "answer": "3"
+
+
+},
+{
+  "question":"If you buy a rooster for the purpose of laying eggs and you expect to get three eggs each day for breakfast, how many eggs will you have after three weeks?",
+  "answer": "0"
+
+    
+},
+{ 
+    
+  "question":"There are 2 ants in front of 2 other ants, 2 ants behind 2 ants and 2 ants next to 2 ants. How many total ants are there?",
+  "answer": "4"
+    
+},
+{ 
+    
+  "question":"Seven boys met each other in a party. Each of them shakes hands only once with each of the other boys. What is the total number of handshakes that took place?",
+  "answer":"21"
+  
+},
+{ 
+   
+  "question":"A grandfather, two fathers and two sons drove to park together. Each of them bought one entry ticket each. How many tickets have they bought in total?",
+  "answer":"3"
+  
+},
+{ 
+    
+  "question":"I am between zero and 10. I am more than two. I am the number before 4. What number am I?",
+  "answer":"3"
+  
+},
+{ 
+    
+  "question":"I am less than 10. I am more than three. I am the number of sides on two squares. What number am I?",
+  "answer":"8"
+  
+},
+{ 
+    
+  "question": " I am less than 10. I am more than the number of sides on a triangle. I am 2 plus 2. What number am I?",
+  "answer":"4"
+  
+},
+{ 
+   
+  "question":"I am between 2 and 10. I am less than eight. I am the number of sides on two triangles. What number am I?",
+  "answer":"6"
+  
+},
+{ 
+  
+  "question":"I am 2 plus 5. What number am I?",
+  "answer":"7"
+  
+},
+{ 
+  
+   
+  "question": "I am more than 3 plus 3. I am the number of sides on two rectangles. What number am I?",
+  "answer":"8"
+  
+},
+{ 
+  
+   
+  "question": "I am more than the number of fingers on one hand. I am 6 plus 4. What number am I?",
+  "answer":"10"
+  
+},
+{ 
+    
+  "question":"I am less than 12. I am 9 minus 3. What number am I?",
+  "answer": "6"
+  
+},
+{ 
+  
+   
+  "question":"I am more than 6. I am 10 minus 2. What number am I?",
+  "answer":"8"
+  
+},
+{ 
+   
+  "question": " I am between 0 and 15. I am less than nine. I am two more than 4. What number am I?",
+  "answer":"6"
+   
+}]
