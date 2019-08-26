@@ -1,14 +1,14 @@
 $("#incorrect").on("click", function() {
-    // $(".prog-result").html("");
-    $('#incorrect').trigger('focus')
-    $("ul").html("");
-    $("#progress").addClass("hide");
-    totaLtime = 0;
+  // $(".prog-result").html("");
+  $('#incorrect').trigger('focus')
+  $("ul").html("");
+  $("#progress").addClass("hide");
+  totaLtime = 0;
 });
 
-function save_name(){
-    username = $("#name").val();
-    localStorage.setItem("username", username)
+function save_name() {
+  username = $("#name").val();
+  localStorage.setItem("username", username)
 }
 
 
@@ -35,7 +35,8 @@ inputs.each(function() {
         $("#sendMessageButton1").removeAttr("disabled");
       }
     });
-  } else {
+  }
+  else {
     input.keyup(function() {
       if (validateInputs(inputs)) {
         $("#sendMessageButton1").removeAttr("disabled");

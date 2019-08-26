@@ -12,7 +12,6 @@ app.secret_key = "its_secure"
 @app.route('/', methods=["GET", "POST"])
 def index():
      if request.method=="POST":
-        print(request.form)
         file= open("user_info.txt", "a")
         file.write("Name:{},Age:{},Grade:{}\n"
                   .format(request.form['name'],request.form['age'],
@@ -58,11 +57,9 @@ def que_ans():
         file_name = "data/three_four.json"
     if check_category == "5":
         file_name = "data/five.json"
-    print(file_name, check_category)
     file = open(file_name, "r")
     file_data = file.read()
     file_data = json.loads(file_data)
-    print(file_data)
     for items in file_data:
         if (items['question'].rstrip() == check_ques.rstrip().replace('"', '')):
             if items['answer'] == check_ans:
@@ -140,7 +137,6 @@ def check_answer():
     with open("data/jk_sk.json", 'r') as file1:
         answer_file = json.load(file1)
     for answer in answer_file:
-        print(answer)
         if answer['question'] == question:
             if answer['answer'] == answers:
                 answer_return = "True"

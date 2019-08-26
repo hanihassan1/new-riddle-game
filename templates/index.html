@@ -1,28 +1,17 @@
-{% extends 'base.html' %}
- {% block head %}
+{% extends 'base.html' %} {% block head %}
 <script src="{{ url_for('static', filename='main.js')}}"></script>
-{% endblock %}
+{% endblock %} {% block content %} {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
 
-{% block content %}
-
-
-    
-    {% with messages = get_flashed_messages() %}
-    {% if messages %}
-    {% for message in messages %}
-   
 
 <script type="text/javascript">
     window.location.href = "{{url_for('jk_sk_ans') }}" + "?username=" + localStorage.getItem("username")
 </script>
-    {% endfor %}
-    {% endif %}
-    {% endwith %}
-<!--/*--------------------------------------------Logo & sign in form*/-->   
+{% endfor %} {% endif %} {% endwith %}
+<!--/*--------------------------------------------Logo & sign in form*/-->
 <div class="container-fluid sect">
     <div class="row no-gutters">
-<div class="col-lg-3 col-md-8 mx-auto form-edit">
-     <img id="logoOne" src="/static/images/main-logo.jpg">
+        <div class="col-lg-3 col-md-8 mx-auto form-edit">
+            <img id="logoOne" src="/static/images/main-logo.jpg">
             <p><b class="signin">Sign In!</b></p>
 
             <form method="POST" name="sentMessage" id="contactForm" novalidate>
@@ -55,10 +44,10 @@
                 </div>
             </form>
         </div>
-        </div>
-        </div>
-        
-        
-        
-        
+    </div>
+</div>
+
+
+
+
 {% endblock %}

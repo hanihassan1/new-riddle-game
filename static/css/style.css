@@ -2,34 +2,35 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round:100,200,300,400,500,600,700|EXO:100,200,300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Cantarell:700i:100,200,300,400,500,600,700|EXO:100,200,300,400,500,600,700');
 /*--------------------------------------------body & html styles*/
+
 body {
-    font-family: 'Varela Round', sans-serif;
-    height: 100%;
-    background-image: url(../images/park-troopers-RAtKWVlfdf4-unsplash.jpg);
-    webkit-background-size: cover;
+  font-family: 'Varela Round', sans-serif;
+  height: 100%;
+  background-image: url(../images/park-troopers-RAtKWVlfdf4-unsplash.jpg);
+  webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
- 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Roboto', sans-serif;
-    padding: 0;
-    margin: 0;
-   
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+
 }
 
 .hide {
-    display: none !important;
+  display: none !important;
 }
 
 
 a {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 html {
- scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 
@@ -66,39 +67,40 @@ h2 {
 
 
 /*--------------------------------------------index--form &logo*/
-#logoOne  {
+
+#logoOne {
   border-radius: 15%;
   opacity: .6;
 }
 
 .game_name {
-  text-align:center;
-     padding-bottom: 25px;
-     
+  text-align: center;
+  padding-bottom: 25px;
+
 }
 
-.signin  {
-  color:#007bff;
- 
+.signin {
+  color: #007bff;
+
 }
 
 
 /*--------------------------------------------game category /nav & Question card*/
 
-@media only screen and (max-width: 480px) {  
-    body {  
-          max-width: 480px;  
-    }  
-    .card_row   {  
-          font-size:14px!important;  
-    }  
-} 
-
-.active {
-  background-color:#F1C40F;
+@media only screen and (max-width: 480px) {
+  body {
+    max-width: 480px;
+  }
+  .card_row {
+    font-size: 14px!important;
+  }
 }
 
- 
+.active {
+  background-color: #F1C40F;
+}
+
+
 nav {
   width: 80%;
   margin: 0 auto;
@@ -111,9 +113,11 @@ nav ul {
   list-style: none;
   text-align: center;
 }
+
 nav ul li {
   display: inline-block;
 }
+
 nav ul li a {
   display: block;
   padding: 15px;
@@ -123,22 +127,26 @@ nav ul li a {
   text-transform: uppercase;
   margin: 0 10px;
 }
+
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
   transition: all .5s;
 }
+
 nav ul li a:hover {
   color: #555;
 }
 
 nav.shift ul li a {
-  position:relative;
+  position: relative;
   z-index: 1;
 }
+
 nav.shift ul li a:hover {
   color: #91640F;
 }
+
 nav.shift ul li a:after {
   display: block;
   position: absolute;
@@ -151,87 +159,104 @@ nav.shift ul li a:after {
   height: 1px;
   content: '.';
   color: transparent;
-  background: #F1C40F;
+  background-color: #F1C40F;
   visibility: none;
   opacity: 0;
   z-index: -1;
 }
+
 nav.shift ul li a:hover:after {
   opacity: 1;
   visibility: visible;
   height: 100%;
 }
 
-#nav_catog  {
- 
-  color: rgba(0, 0, 0, 0.5); 
+#nav_catog {
+
+  color: rgba(0, 0, 0, 0.5);
 
 }
 
-#sendMessageButton1     {
-    opacity: 9;
-    background-color: #A9A9A9;
-    border-radius: 10%;
-    color: #484848;
+#sendMessageButton1 {
+  opacity: 9;
+  background-color: #A9A9A9;
+  border-radius: 10%;
+  color: #484848;
 }
 
 
 .form-control {
-  
-     width: 68%!important;
-     
+
+  width: 68%!important;
+
 }
+
 .btn {
-   margin-top:10px;
+  margin-top: 10px;
 }
+
 .form-edit {
-    height:75%;
-   padding-top: 10px;
-  
+  height: 75%;
+  padding-top: 10px;
+
+}
+
+.user-name-edit  {
+  font-family: 'Varela Round', sans-serif;
+  font-weight:700;
+  color: black;
+  text-transform: uppercase;
+  font-size:40px;
+}
+
+.card-header {
+   background-color: #F1C40F;
 }
 
 /*--------------------------------------------Leadership page*/
 
-.lead-head  {
-  text-align:center;
-  font-size:30px;
-   color:#007bff;
-   font-weight: 700;
-   font-family: 'Varela Round', sans-serif;
-    text-decoration: underline;
+.lead-head {
+  text-align: center;
+  font-size: 30px;
+  color: #007bff;
+  font-weight: 700;
+  font-family: 'Varela Round', sans-serif;
+  text-decoration: underline;
 }
 
 .lead-backg {
-     height: 77vh;
+  height: 77vh;
 }
 
 
 .table {
   width: 500px;
   padding-right: 10%;
-  font-size:20px;
+  font-size: 20px;
 }
 
 .lead-homebt {
- font-size:30px;
- padding-bottom:50px;
+  font-size: 30px;
+  padding-bottom: 50px;
 
- font-family: 'Varela Round', sans-serif;
- 
+  font-family: 'Varela Round', sans-serif;
+
 }
 
 .newgame {
-   background-color: #16D540!important;
-   color:white;
-}
-.fas  {
-  color:orange!important;
-  font-size:40px;
-}
-.fa-medal  {
-  font-size:20px!important;
+  background-color: #16D540!important;
+  color: white;
 }
 
-.winner  {
-  color:#16D540;
+.fas {
+  color: orange!important;
+  font-size: 40px;
+}
+
+.fa-medal {
+  font-size: 20px!important;
+}
+
+.winner {
+  color: #16D540;
 }
